@@ -3,13 +3,12 @@ header.header
     .container
         | 
         .header-top
-            |
             | 
             a.logo(href="#"): img.logo-image(src="img/horizontal-logo.svg" alt="logo: Best Tour Plan")
             |
             form.search(action="#")
                 |
-                input.search__input(type="text")
+                input.search__input(type="text" placeholder="Search Location")
                 |
                 button.search__button: img(src="img/search.svg" alt="icon:search")
             |
@@ -19,3 +18,19 @@ header.header
                 img.user__avatar(src="img/user-avatar.jpeg" alt="avatar: Nathan")
                 |
                 span.user__name Nathan
+        |
+        ul.header-menu 
+            
+            li.header-menu__item: a.header-menu__link(href="#") All Deals
+            |
+            li.header-menu__item: a.header-menu__link(href="#") Hotels            
+            |
+            li.header-menu__item: a.header-menu__link(href="#") Activities           
+            |
+            li.header-menu__item: a.header-menu__link(href="#") Hotel Day Package            
+            |
+            li.header-menu__item: a.header-menu__link(href="#") Restaurants
+            |            
+            li.header-menu__item: a.header-menu__link(href="#") Events
+            |           
+            li.header-menu__item: a.header-menu__link(href="#") Rodrigues
