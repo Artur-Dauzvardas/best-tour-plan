@@ -1,7 +1,14 @@
-header.header 
-    
-    .container 
-
-        .header-wrapper 
-
+header.header
+    |
+    .container
+        | 
+        .header-wrapper
+            |
+            | 
             a.logo(href="#"): img.logo-image(src="img/horizontal-logo.svg" alt="logo: Best Tour Plan")
+            |
+            form.search(action="#")
+                |
+                input.search__input(type="text")
+                |
+                button.search__button: img(src="img/search.svg" alt="icon:search")
