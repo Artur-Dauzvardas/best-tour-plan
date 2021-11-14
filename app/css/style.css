@@ -8164,6 +8164,11 @@ progress {
   animation-name: slideOutUp;
 }
 
+.container {
+  max-width: 1140px;
+  background-color: red;
+}
+
 @media screen and (min-width: 1200px) {
   /*lg - для ширины экрана от 992px до 1199px включительно*/
 }
