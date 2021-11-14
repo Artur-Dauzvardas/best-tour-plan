@@ -1,4 +1,33 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;1,700&family=Nunito:wght@400;700;800&display=swap");
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Muli";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Muli/Muli.eot");
+  src: url("../fonts/Muli/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli/Muli.woff") format("woff"), url("../fonts/Muli/Muli.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Muli";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/Muli/Muli Bold.eot");
+  src: url("../fonts/Muli/Muli Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli/Muli Bold.woff") format("woff"), url("../fonts/Muli/Muli Bold.ttf") format("truetype");
+}
 /*!
  * Bootstrap Reboot v5.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -8166,7 +8195,15 @@ progress {
 
 .container {
   max-width: 1140px;
-  background-color: green;
+}
+
+.header-menu__link {
+  font-family: "Muli", sans-serif;
+  font-weight: 700;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
 }
 
 @media screen and (min-width: 1200px) {
