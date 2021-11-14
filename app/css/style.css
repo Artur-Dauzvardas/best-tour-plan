@@ -8166,7 +8166,7 @@ progress {
 
 .container {
   max-width: 1140px;
-  background-color: red;
+  background-color: green;
 }
 
 @media screen and (min-width: 1200px) {
