@@ -1,32 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;1,700&family=Nunito:wght@400;700;800&display=swap");
-@font-face {
-  font-family: "roboto-example";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
-  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "roboto-example";
-  font-weight: bold;
-  font-style: normal;
-  src: url("../fonts/RobotoBold/RobotoBold.eot");
-  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Muli";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/Muli/Muli.eot");
-  src: url("../fonts/Muli/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli/Muli.woff") format("woff"), url("../fonts/Muli/Muli.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Muli";
-  font-weight: bold;
-  font-style: normal;
-  src: url("../fonts/Muli/Muli Bold.eot");
-  src: url("../fonts/Muli/Muli Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli/Muli Bold.woff") format("woff"), url("../fonts/Muli/Muli Bold.ttf") format("truetype");
-}
+@charset "UTF-8";
 /*!
  * Bootstrap Reboot v5.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -34,6 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;1,700&family=Nunito:wght@400;700;800&display=swap");
 *,
 *::before,
 *::after {
@@ -5230,6 +5203,34 @@ progress {
     display: none !important;
   }
 }
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Muli";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Muli/Muli.eot");
+  src: url("../fonts/Muli/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli/Muli.woff") format("woff"), url("../fonts/Muli/Muli.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Muli";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/Muli/Muli Bold.eot");
+  src: url("../fonts/Muli/Muli Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli/Muli Bold.woff") format("woff"), url("../fonts/Muli/Muli Bold.ttf") format("truetype");
+}
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -8545,6 +8546,10 @@ body {
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 .navbar {
   background-color: #fff;
 }
@@ -8560,6 +8565,9 @@ body {
           justify-content: space-between;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+.navbar-top__menu-button {
+  display: none;
 }
 .navbar__search {
   margin-right: auto;
@@ -8641,15 +8649,31 @@ body {
   color: #333;
 }
 
+@media screen and (min-width: 1200px) {
+  /*lg - для ширины экрана от 992px до 1199px включительно*/
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /*md - для ширины экрана от 768px до 991px включительно*/
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /*sm - для ширины экрана от 576px до 767px включительно*/
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  /*xs - для ширины экрана не более 575px включительно*/
+}
 /*==========  Desktop First  ==========*/
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .container {
     max-width: 960px;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .container {
     max-width: 700px;
+  }
+
+  .logo {
+    width: 132px;
   }
 
   .navbar-top {
@@ -8667,6 +8691,47 @@ body {
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
+  }
+}
+@media (max-width: 767.98px) {
+  .container {
+    max-width: 576px;
+    width: 92%;
+  }
+
+  .navbar__search, .navbar-menu, .navbar__user {
+    display: none;
+  }
+
+  .menu-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 16px;
+    height: 11px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .menu-button__line {
+    width: 16px;
+    height: 1px;
+    background-color: #333;
+  }
+}
+@media (max-width: 575.98px) {
+  .logo {
+    width: 99px;
   }
 }
 /*==========  Mobile First  ==========*/
